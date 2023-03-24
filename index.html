@@ -27,8 +27,10 @@
           <a href="./index.html" class="logo-header link"
             >Web<span class="studio">Studio</span></a
           >
-          <ul class="mune list">
-            <li><a href="./index.html" class="nav link">Studio</a></li>
+          <ul class="mune list studio-menu">
+            <li>
+              <a href="./index.html" class="nav link studio-nav">Studio</a>
+            </li>
             <li>
               <a href="./portfolio.html" class="nav link">Portfolio</a>
             </li>
@@ -56,7 +58,9 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="btn">Order Service</button>
+          <button type="button" class="btn" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
       <!-- advantages -->
@@ -421,11 +425,11 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button">
-          <svg>
-            <use href="./images/icons.svg#"></use>
+        <button type="button" class="modal-buttom" data-modal-close>
+          <svg width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black"></use>
           </svg>
         </button>
       </div>
