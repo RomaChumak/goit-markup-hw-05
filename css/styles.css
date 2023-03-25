@@ -592,7 +592,8 @@ body {
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -600,6 +601,7 @@ body {
 .modal-buttom:hover,
 .modal-buttom:focus {
   background-color: #404bbf;
+  border-color: #404bbf;
 }
 .modal-buttom:hover .modal-icon {
   fill: #ffffff;
