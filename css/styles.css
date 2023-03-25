@@ -52,19 +52,7 @@ body {
   color: #2e2f42;
 }
 /* header */
-.studio-nav {
-  color: #404bbf;
-}
-.studio-menu::after {
-  content: "";
-  position: absolute;
-  top: 48px;
-  margin-top: 20px;
-  width: 48px;
-  height: 4px;
-  background-color: #404bbf;
-  border-radius: 2px;
-}
+
 .header {
   background-color: #ffffff;
 }
@@ -81,6 +69,19 @@ body {
   padding-top: 24px;
   padding-bottom: 24px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.studio-nav {
+  color: #404bbf;
+}
+.studio-menu::after {
+  content: "";
+  position: absolute;
+  top: 49px;
+  margin-top: 20px;
+  width: 48px;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
 }
 .address-link {
   font-weight: 400;
@@ -436,7 +437,7 @@ body {
 .portfolio-mune::after {
   content: "";
   position: absolute;
-  top: 48px;
+  top: 49px;
   margin-top: 20px;
   margin-left: 88px;
   width: 66px;
@@ -579,8 +580,6 @@ body {
 }
 .modal-buttom {
   display: block;
-  justify-content: center;
-  align-items: center;
   margin-left: auto;
   width: 24px;
   height: 24px;
@@ -589,9 +588,12 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-buttom:hover,
 .modal-buttom:focus {
